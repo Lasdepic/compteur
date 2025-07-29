@@ -19,7 +19,7 @@ donneValeur.className = 'valeur'
 // Ajout d'un titre
 
 title.textContent = "Compteur";
-donneValeur.textContent = "Donne une valeur:";
+donneValeur.textContent = "Indiquer la valeur max:";
 
 
 //  création des élément

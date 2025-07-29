@@ -10,30 +10,24 @@ h1{
 }
 
 body {
-    min-height: 100vh;
+    height: 100vh;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: hsl(262, 59%, 40%);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
 }
 
 section {
-    height: auto;
-    min-height: 60vh;
+    height: 60vh;
     width: 30vw;
-    min-width: 350px;
-    max-width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 30px;
-    padding: 40px 30px;
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 10px rgba(2, 2, 2, 3);
     background: aliceblue;
-    border-radius: 15px;
 }
 
 input{
@@ -67,89 +61,5 @@ input{
 
 p{
     font-size: 24px;
-}
-
-/* Media Queries pour le responsive */
-
-/* Tablettes */
-@media screen and (max-width: 768px) {
-    h1 {
-        font-size: 32px;
-        margin-bottom: 20px;
-    }
-    
-    section {
-        width: 80vw;
-        height: auto;
-        min-height: 50vh;
-        padding: 20px;
-        gap: 20px;
-    }
-    
-    input {
-        width: 60vw;
-        height: 5vh;
-        font-size: 16px;
-    }
-    
-    .btn-increment, .btn-decrement, .btn-reset {
-        width: 50vw;
-        height: 40px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-    }
-    
-    p {
-        font-size: 20px;
-        text-align: center;
-    }
-}
-
-/* Mobiles */
-@media screen and (max-width: 480px) {
-    body {
-        height: auto;
-        min-height: 100vh;
-        padding: 10px;
-    }
-    
-    h1 {
-        font-size: 28px;
-        margin-bottom: 15px;
-    }
-    
-    section {
-        width: 95vw;
-        padding: 15px;
-        gap: 15px;
-        border-radius: 10px;
-    }
-    
-    input {
-        width: 80vw;
-        height: 6vh;
-        font-size: 18px;
-        max-width: 300px;
-    }
-    
-    .btn-increment, .btn-decrement, .btn-reset {
-        width: 80vw;
-        height: 45px;
-        font-size: 18px;
-        max-width: 300px;
-        font-weight: bold;
-    }
-    
-    p {
-        font-size: 18px;
-        text-align: center;
-        margin: 5px 0;
-    }
-    
-    .valeur {
-        font-size: 16px;
-        font-weight: bold;
-    }
 }
 
