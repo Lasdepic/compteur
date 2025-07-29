@@ -11,7 +11,7 @@ h1 {
 body {
     height: 100vh;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: hsl(262, 59%, 40%);
+    background-color: hsl(262, 42%, 48%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,10 +24,10 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
     border-radius: 20px;
     box-shadow: 2px 2px 10px rgba(2, 2, 2, 3);
-    background: aliceblue;
+    background: rgb(182, 221, 255);
 }
 
 input {
@@ -44,6 +44,8 @@ input {
     height: 40px;
     border-radius: 20px;
     box-shadow: 2px 2px 10px rgba(2, 2, 2, 3);
+    font-weight: bolder;
+    cursor: pointer;
 }
 
 .btn-decrement {
@@ -52,6 +54,8 @@ input {
     height: 40px;
     border-radius: 20px;
     box-shadow: 2px 2px 10px rgba(2, 2, 2, 3);
+    font-weight: bolder;
+    cursor: pointer;
 }
 
 .btn-reset {
@@ -60,8 +64,27 @@ input {
     height: 40px;
     border-radius: 20px;
     box-shadow: 2px 2px 10px rgba(2, 2, 2, 3);
+    font-weight: bolder;
+    cursor: pointer;
 }
 
 p {
-    font-size: 18px;
+    font-size: 50px;
+}
+
+.Valeur{
+    font-size:24px;
+    color: rgb(54, 54, 54);
+    border-bottom: 1px solid black;
+}
+
+.btnAdd{
+    width: 16vw;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(101, 95, 204);
+    color: aliceblue;
+    box-shadow: 2px 2px 10px rgba(2, 2, 2, 3);
+    font-weight: bolder;
+    cursor: pointer;
 }
