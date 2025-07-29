@@ -14,7 +14,7 @@ const limiteValue = document.createElement('p')
 buttonIncremente.className = 'btn-increment'
 buttonDecremente.className = 'btn-decrement'
 buttonReset.className = 'btn-reset'
-valueMax.className = 'Valeur'
+donneValeur.className = 'valeur'
 
 //  création des élément
 
@@ -25,15 +25,14 @@ sectionCard.appendChild(buttonIncremente);
 sectionCard.appendChild(buttonDecremente);
 sectionCard.appendChild(buttonReset);
 sectionCard.appendChild(donneValeur);
-sectionCard.appendChild(limiteValue);
 sectionCard.appendChild(valueMax);
-
+sectionCard.appendChild(limiteValue);
 
 // -------------------------------------------------------------------------------------------
 
 // Ajout d'un titre
 
-title.textContent = "My counter";
+title.textContent = "Compteur";
 valueMax.placeholder = "Indiquer la valeur max:";
 numberChanged.innerText = 0;
 buttonIncremente.innerText = "Ajouter +";
@@ -98,7 +97,7 @@ function reset(){
 function valeurLimite(){
     valueMax.addEventListener('input', () =>{
         maxLimited = valueMax.value;
-        limiteValue.innerText = ` ${valueMax.value}`;
+        limiteValue.innerText = `Compteur bloqué à ${valueMax.value}`;
     });
 }
 
