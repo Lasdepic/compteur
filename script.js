@@ -6,6 +6,7 @@ const buttonIncremente = document.createElement('button')
 const buttonDecremente = document.createElement('button', 'btn-decre')
 const buttonReset = document.createElement('button')
 const valueMax = document.createElement('input')
+const donneValeur = document.createElement('p')
 const limiteValue = document.createElement('p')
 
 // Ajouter des classes aux boutons pour les différencier
@@ -13,10 +14,13 @@ const limiteValue = document.createElement('p')
 buttonIncremente.className = 'btn-increment'
 buttonDecremente.className = 'btn-decrement'
 buttonReset.className = 'btn-reset'
+donneValeur.className = 'valeur'
 
 // Ajout d'un titre
 
 title.textContent = "Compteur";
+donneValeur.textContent = "Donne une valeur:";
+
 
 //  création des élément
 
@@ -26,6 +30,7 @@ sectionCard.appendChild(numberChanged);
 sectionCard.appendChild(buttonIncremente);
 sectionCard.appendChild(buttonDecremente);
 sectionCard.appendChild(buttonReset);
+sectionCard.appendChild(donneValeur);
 sectionCard.appendChild(valueMax);
 sectionCard.appendChild(limiteValue);
 
@@ -54,9 +59,6 @@ function buttonAdd(){
 
     return buttonIncremente
 }
-
-counter++;
-        numberChanged.innerText = counter;
 
 // -------------------------------------------------------------------------------------------
 
