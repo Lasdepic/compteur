@@ -14,7 +14,7 @@ const limiteValue = document.createElement('p')
 buttonIncremente.className = 'btn-increment'
 buttonDecremente.className = 'btn-decrement'
 buttonReset.className = 'btn-reset'
-valueMax.className = 'Valeur'
+limiteValue.className = 'Valeur'
 
 //  création des élément
 
@@ -101,6 +101,32 @@ function valeurLimite(){
         limiteValue.innerText = ` ${valueMax.value}`;
     });
 }
+// -------------------------------------------------------------------------------------------
+
+// function qui crée les éléments 
+
+function createAndElement(type, content, parent, classe) {
+    let typeElement = document.createElement(type);
+
+    if (content) {
+        typeElement.textContent = content;
+    }
+    
+    if (classe) {
+        typeElement.className = classe;
+    }
+    
+    if (parent) {
+        parent.appendChild(typeElement);
+    }
+    
+    return typeElement;
+}
+
+createAndElement('button', 'Chrono', sectionCard, 'btnAdd');
+
+
+
 
 
 
